@@ -1279,6 +1279,8 @@ button:focus-visible {
       opacity 0.4s var(--ease-playful),
       visibility 0.4s;
     z-index: calc(var(--z-overlay) - 1);
+
+    height: 90vh;
   }
 
   .navbar__menu--open {
