@@ -525,6 +525,7 @@ button:focus-visible {
 }
 
 .hero__chef {
+  margin-top: 20px;
   margin-left: 395px;
 }
 
@@ -581,6 +582,44 @@ button:focus-visible {
   display: flex;
   gap: var(--space-sm);
   flex-wrap: wrap;
+}
+
+/* Scroll indicator — "more below" at bottom of hero */
+.hero__scroll-indicator {
+  position: absolute;
+  bottom: var(--space-lg);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: calc(var(--z-content) + 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-pink);
+  transition:
+    color var(--dur-base) var(--ease-playful),
+    transform var(--dur-base) var(--ease-playful);
+}
+
+.hero__scroll-indicator:hover {
+  color: var(--color-hot-pink);
+  transform: translateX(-50%) translateY(4px);
+}
+
+.hero__scroll-indicator-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: hero-scroll-bounce 2s var(--ease-in-out) infinite;
+}
+
+@keyframes hero-scroll-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
 }
 
 /* ===== ABOUT ===== */
@@ -761,6 +800,28 @@ button:focus-visible {
   margin-bottom: var(--space-2xl);
 }
 
+.products__delivery-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-size: var(--text-sm);
+  font-weight: var(--fw-medium);
+  color: var(--color-gray-600);
+  background: var(--color-blush);
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(237, 89, 143, 0.2);
+}
+
+.products__delivery-badge-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-pink);
+  flex-shrink: 0;
+}
+
 .products__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -770,7 +831,7 @@ button:focus-visible {
 /* Product Card */
 .product-card {
   text-align: center;
-  padding: var(--space-lg);
+  padding: var(--space-md);
   border-radius: var(--radius-lg);
   transition: transform var(--dur-base) var(--ease-playful);
   position: relative;
