@@ -1423,7 +1423,8 @@ button:focus-visible {
   }
 
   .spotlight__features {
-    align-items: center;
+    align-items: left;
+    text-align: left;
   }
 
   /* Testimonial mobile */
