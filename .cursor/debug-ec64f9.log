@@ -86,3 +86,7 @@
 {"sessionId":"ec64f9","runId":"initial","hypothesisId":"H1","location":"assets/js/main.js:88","message":"navbar hidden on scroll down","data":{"currentScroll":328,"lastScroll":288},"timestamp":1772221052358}
 {"sessionId":"ec64f9","runId":"initial","hypothesisId":"H1","location":"assets/js/main.js:90","message":"navbar shown on scroll up","data":{"currentScroll":2852,"lastScroll":2859},"timestamp":1772221053250}
 {"sessionId":"ec64f9","runId":"initial","hypothesisId":"H1","location":"assets/js/main.js:88","message":"navbar hidden on scroll down","data":{"currentScroll":1769,"lastScroll":1763},"timestamp":1772221061988}
+{"sessionId":"ec64f9","runId":"initial","hypothesisId":"H1","location":"assets/js/main.js:88","message":"navbar hidden on scroll down","data":{"currentScroll":2164,"lastScroll":0},"timestamp":1772221144291}
+{"sessionId":"ec64f9","runId":"initial","hypothesisId":"H1","location":"assets/js/main.js:88","message":"navbar hidden on scroll down","data":{"currentScroll":2164,"lastScroll":0},"timestamp":1772221158383}
+{"sessionId":"ec64f9","runId":"initial","hypothesisId":"H1","location":"assets/js/main.js:88","message":"navbar hidden on scroll down","data":{"currentScroll":2164,"lastScroll":0},"timestamp":1772221178212}
+{"sessionId":"ec64f9","runId":"initial","hypothesisId":"H1","location":"assets/js/main.js:90","message":"navbar shown on scroll up","data":{"currentScroll":2136,"lastScroll":2143},"timestamp":1772221182659}
