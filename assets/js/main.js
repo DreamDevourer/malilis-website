@@ -79,15 +79,77 @@
       () => {
         const currentScroll = window.pageYOffset;
 
+        // If the mobile menu is open, keep navbar fixed/visible and skip
+        // hide-on-scroll behavior so the full-screen menu doesn't slide away.
+        if (navbar.classList.contains("navbar--menu-open")) {
+          navbar.classList.remove("navbar--hidden");
+          lastScroll = currentScroll;
+          return;
+        }
+
         // Solid background after scroll threshold
         navbar.classList.toggle("navbar--scrolled", currentScroll > threshold);
 
         // Hide on scroll down, show on scroll up (after 300px)
         if (currentScroll > 300) {
           if (currentScroll > lastScroll + 5) {
+            const wasHidden = navbar.classList.contains("navbar--hidden");
             navbar.classList.add("navbar--hidden");
+            if (!wasHidden) {
+              // #region agent log
+              fetch(
+                "http://127.0.0.1:7365/ingest/604a30e7-7457-4924-b629-d7db86d45fab",
+                {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                    "X-Debug-Session-Id": "ec64f9",
+                  },
+                  body: JSON.stringify({
+                    sessionId: "ec64f9",
+                    runId: "initial",
+                    hypothesisId: "H1",
+                    location: "assets/js/main.js:88",
+                    message: "navbar hidden on scroll down",
+                    data: {
+                      currentScroll,
+                      lastScroll,
+                    },
+                    timestamp: Date.now(),
+                  }),
+                },
+              ).catch(() => {});
+              // #endregion
+            }
           } else if (currentScroll < lastScroll - 5) {
+            const wasHidden = navbar.classList.contains("navbar--hidden");
             navbar.classList.remove("navbar--hidden");
+            if (wasHidden) {
+              // #region agent log
+              fetch(
+                "http://127.0.0.1:7365/ingest/604a30e7-7457-4924-b629-d7db86d45fab",
+                {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                    "X-Debug-Session-Id": "ec64f9",
+                  },
+                  body: JSON.stringify({
+                    sessionId: "ec64f9",
+                    runId: "initial",
+                    hypothesisId: "H1",
+                    location: "assets/js/main.js:90",
+                    message: "navbar shown on scroll up",
+                    data: {
+                      currentScroll,
+                      lastScroll,
+                    },
+                    timestamp: Date.now(),
+                  }),
+                },
+              ).catch(() => {});
+              // #endregion
+            }
           }
         } else {
           navbar.classList.remove("navbar--hidden");
@@ -119,8 +181,41 @@
           window.pageYOffset -
           navbarHeight;
 
+        // #region agent log
+        fetch(
+          "http://127.0.0.1:7365/ingest/604a30e7-7457-4924-b629-d7db86d45fab",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "X-Debug-Session-Id": "ec64f9",
+            },
+            body: JSON.stringify({
+              sessionId: "ec64f9",
+              runId: "initial",
+              hypothesisId: "H4",
+              location: "assets/js/main.js:114",
+              message: "smooth scroll anchor clicked",
+              data: {
+                href: targetId,
+                targetTop: target.getBoundingClientRect().top,
+                navbarHeight,
+                targetPosition,
+                hasLenis: !!window.__lenis,
+              },
+              timestamp: Date.now(),
+            }),
+          },
+        ).catch(() => {});
+        // #endregion
+
         // Use Lenis if available, otherwise native
         if (window.__lenis) {
+          // Ensure Lenis is running before trying to scroll (important on
+          // mobile where the menu toggle may have stopped it).
+          if (typeof window.__lenis.start === "function") {
+            window.__lenis.start();
+          }
           window.__lenis.scrollTo(targetPosition, { duration: 1.2 });
         } else {
           window.scrollTo({ top: targetPosition, behavior: "smooth" });
@@ -135,6 +230,7 @@
   function initMobileMenu() {
     const toggle = document.querySelector(".navbar__toggle");
     const menu = document.querySelector(".navbar__menu");
+    const navbar = document.getElementById("navbar");
     if (!toggle || !menu) return;
 
     const links = menu.querySelectorAll(".navbar__link, .navbar__cta");
@@ -145,6 +241,47 @@
       menu.classList.toggle("navbar__menu--open");
       toggle.classList.toggle("navbar__toggle--active");
       document.body.classList.toggle("no-scroll");
+
+      if (navbar) {
+        // Track when the menu is open so the scroll-aware navbar logic can
+        // disable hide-on-scroll while the overlay is visible.
+        navbar.classList.toggle("navbar--menu-open", !isOpen);
+        // Ensure navbar is visible whenever the mobile menu is opened so the
+        // full-screen menu is not translated off-screen by the hide-on-scroll
+        // behavior.
+        if (!isOpen) {
+          navbar.classList.remove("navbar--hidden");
+        }
+      }
+
+      // #region agent log
+      fetch(
+        "http://127.0.0.1:7365/ingest/604a30e7-7457-4924-b629-d7db86d45fab",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "X-Debug-Session-Id": "ec64f9",
+          },
+          body: JSON.stringify({
+            sessionId: "ec64f9",
+            runId: "initial",
+            hypothesisId: "H2",
+            location: "assets/js/main.js:142",
+            message: "mobile menu toggle clicked",
+            data: {
+              isOpenBeforeClick: isOpen,
+              isOpenAfterClick: !isOpen,
+              scrollY: window.pageYOffset,
+              navbarHidden: navbar
+                ? navbar.classList.contains("navbar--hidden")
+                : null,
+            },
+            timestamp: Date.now(),
+          }),
+        },
+      ).catch(() => {});
+      // #endregion
 
       // Pause/resume Lenis
       if (window.__lenis) {
@@ -164,6 +301,32 @@
         toggle.classList.remove("navbar__toggle--active");
         document.body.classList.remove("no-scroll");
         if (window.__lenis) window.__lenis.start();
+
+        // #region agent log
+        const href = link.getAttribute("href");
+        fetch(
+          "http://127.0.0.1:7365/ingest/604a30e7-7457-4924-b629-d7db86d45fab",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "X-Debug-Session-Id": "ec64f9",
+            },
+            body: JSON.stringify({
+              sessionId: "ec64f9",
+              runId: "initial",
+              hypothesisId: "H3",
+              location: "assets/js/main.js:160",
+              message: "mobile menu link clicked (menu close handler)",
+              data: {
+                href,
+                scrollY: window.pageYOffset,
+              },
+              timestamp: Date.now(),
+            }),
+          },
+        ).catch(() => {});
+        // #endregion
       });
     });
   }
