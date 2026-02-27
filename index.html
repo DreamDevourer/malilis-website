@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Malili's Sweet Bakery — Bolos no pote artesanais feitos com amor. Red Velvet, Caramelo Salgado, Chocolate. Camadas perfeitas em cada potinho.">
+  <meta name="theme-color" content="#ED598F">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Malili's Sweet Bakery">
+  <meta property="og:description" content="Bolos no pote artesanais feitos com amor.">
+  <meta property="og:image" content="assets/images/logos/logo-horizontal-minimal.png">
+  <meta property="og:type" content="website">
+
+  <title>Malili's Sweet Bakery | Bolo no Pote Artesanal</title>
+
+  <link rel="icon" type="image/png" href="assets/images/logos/logo-dog.png">
+  <link rel="apple-touch-icon" href="assets/images/logos/logo-dog.png">
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="assets/images/products/red-velvet-hands.png">
+
+  <!-- Google Fonts — Script for chef signature -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- GSAP + ScrollTrigger + Lenis via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar" role="banner">
+    <nav class="navbar__inner container" aria-label="Navegação principal">
+      <a href="#" class="navbar__logo" aria-label="Malili's Sweet Bakery — Início">
+        <img src="assets/images/logos/malilis-color-dog.png"
+             alt="Malili's Sweet Bakery"
+             width="160" height="48"
+             loading="eager">
+      </a>
+
+      <button class="navbar__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+        <span class="navbar__toggle-line"></span>
+        <span class="navbar__toggle-line"></span>
+        <span class="navbar__toggle-line"></span>
+      </button>
+
+      <ul class="navbar__menu" id="nav-menu" role="list">
+        <li><a href="#home" class="navbar__link">Início</a></li>
+        <li><a href="#products" class="navbar__link">Sabores</a></li>
+        <li><a href="#about" class="navbar__link">Sobre</a></li>
+        <li><a href="#faq" class="navbar__link">Dúvidas</a></li>
+        <li class="navbar__menu-cta"><a href="https://wa.me/554197467645?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20%F0%9F%98%8A"
+           class="btn btn--primary"
+           target="_blank"
+           rel="noopener noreferrer">Peça Agora</a></li>
+      </ul>
+
+      <div class="navbar__cta-wrap">
+        <a href="https://wa.me/554197467645?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20%F0%9F%98%8A"
+           class="navbar__cta btn btn--primary"
+           target="_blank"
+           rel="noopener noreferrer">Peça Agora</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home" aria-labelledby="hero-heading">
+    <!-- Decorative circles -->
+    <div class="hero__decor" aria-hidden="true">
+      <span class="decor-circle decor-circle--hero-lg"></span>
+      <span class="decor-circle decor-circle--hero-md"></span>
+      <span class="decor-circle decor-circle--hero-sm"></span>
+    </div>
+
+    <!-- Product image — full bleed right -->
+    <div class="hero__image">
+      <img src="assets/images/products/red-velvet-hands.png"
+           alt="Mão segurando um bolo no pote Red Velvet com camadas de cream cheese e bolo red velvet"
+           width="580" height="680"
+           loading="eager"
+           class="hero__product-img">
+    </div>
+
+    <div class="hero__inner container">
+      <div class="hero__content">
+        <!-- Heading composition — editorial layout like reference -->
+        <div class="hero__composition">
+          <h1 class="hero__heading" id="hero-heading">
+            <span class="hero__heading-line">Doçura</span>
+            <span class="hero__heading-line second--hero-line">em Cada</span>
+            <span class="hero__heading-line third--hero-line">Camada</span>
+          </h1>
+
+          <!-- Chef signature — floats between heading lines like "By Roberto F." -->
+          <div class="hero__chef">
+            <span class="hero__chef-label">por</span>
+            <img src="assets/images/marjory-czarneski-chef.jpg"
+                 alt="Chef Marjory Czarneski"
+                 width="56" height="56"
+                 loading="eager"
+                 class="hero__chef-photo">
+            <span class="hero__chef-name">Marjory C.</span>
+          </div>
+        </div>
+
+        <p class="hero__subtext">
+          Bolo no pote artesanal feito com ingredientes selecionados,
+          camadas perfeitas e muito carinho em cada potinho.
+        </p>
+        <!-- <div class="hero__actions">
+          <a href="https://wa.me/554197467645?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20%F0%9F%98%8A"
+             class="btn btn--primary btn--lg"
+             target="_blank"
+             rel="noopener noreferrer">Peça Agora</a>
+          <a href="#products" class="btn btn--outline btn--lg">Ver Sabores</a>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="about__inner container">
+
+      <!-- Marjory showcase with floating flavor balloons -->
+      <div class="about__showcase">
+        <!-- Decorative ring behind Marjory -->
+        <span class="about__ring" aria-hidden="true"></span>
+        <span class="about__ring about__ring--outer" aria-hidden="true"></span>
+
+        <!-- Floating flavor balloons -->
+        <div class="about__balloon about__balloon--rv" aria-hidden="true">
+          <span class="about__balloon-icon">🍰</span>
+          <span class="about__balloon-label">Red Velvet</span>
+        </div>
+        <div class="about__balloon about__balloon--sc" aria-hidden="true">
+          <span class="about__balloon-icon">🍮</span>
+          <span class="about__balloon-label">Caramelo Salgado</span>
+        </div>
+        <div class="about__balloon about__balloon--ch" aria-hidden="true">
+          <span class="about__balloon-icon">🍫</span>
+          <span class="about__balloon-label">Chocolate</span>
+        </div>
+        <div class="about__balloon about__balloon--handmade" aria-hidden="true">
+          <span class="about__balloon-icon">🤲</span>
+          <span class="about__balloon-label">100% Artesanal</span>
+        </div>
+
+        <!-- Marjory photo -->
+        <div class="about__photo-wrap">
+          <img src="assets/images/Marjory-transparent.png"
+               alt="Chef Marjory Czarneski, fundadora da Malili's Sweet Bakery"
+               width="480" height="600"
+               loading="lazy"
+               class="about__photo">
+        </div>
+      </div>
+
+      <!-- Text below -->
+      <div class="about__content">
+        <h2 class="about__heading" id="about-heading">
+          Conheça a <em>Malili's</em>
+        </h2>
+        <p class="about__text">
+          Marjory Czarneski, a Chef que traz o melhor da tradição do bolo no pote,
+          com camadas sofisticadas, pensadas e testadas com muito cuidado e tempo, tudo feito a mão.
+          Cada potinho é preparado do zero com ingredientes
+          selecionados e o mesmo carinho que você colocaria
+          em uma sobremesa caseira para quem você ama.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== PRODUCTS ========== -->
+  <section class="products" id="products" aria-labelledby="products-heading">
+    <div class="products__inner container">
+      <div class="products__header">
+        <p class="products__eyebrow">Cardápio</p>
+        <h2 class="products__heading" id="products-heading">
+          Nossos Sabores<br><em>Exclusivos</em>
+        </h2>
+      </div>
+
+      <div class="products__grid">
+        <!-- Red Velvet -->
+        <article class="product-card" aria-labelledby="product-rv">
+          <div class="product-card__image-wrap">
+            <span class="product-card__circle" aria-hidden="true"></span>
+            <img src="assets/images/products/red-velvet-front.png"
+                 alt="Bolo no pote Red Velvet com camadas de cream cheese"
+                 width="400" height="480"
+                 loading="lazy"
+                 class="product-card__img">
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name" id="product-rv">Red Velvet</h3>
+            <p class="product-card__desc">
+              Bolo red velvet aveludado com deliciosas camadas de cream cheese.
+              Nosso mais vendido.
+            </p>
+            <a href="https://wa.me/554197467645?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20Red%20Velvet%20%F0%9F%98%8A"
+               class="product-card__link" target="_blank" rel="noopener noreferrer">Peça Agora &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Salted Caramel -->
+        <article class="product-card" aria-labelledby="product-sc">
+          <div class="product-card__image-wrap">
+            <span class="product-card__circle" aria-hidden="true"></span>
+            <img src="assets/images/products/salted-caramel-front.png"
+                 alt="Bolo no pote Caramelo Salgado com cobertura de caramelo e cristais de sal"
+                 width="400" height="480"
+                 loading="lazy"
+                 class="product-card__img">
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name" id="product-sc">Caramelo Salgado</h3>
+            <p class="product-card__desc">
+              Camadas ricas de caramelo coroadas com cristais crocantes de sal.
+              Doce e salgado na medida.
+            </p>
+            <a href="https://wa.me/554197467645?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20Caramelo%20Salgado%20%F0%9F%98%8A"
+               class="product-card__link" target="_blank" rel="noopener noreferrer">Peça Agora &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Chocolate -->
+        <article class="product-card" aria-labelledby="product-ch">
+          <div class="product-card__image-wrap">
+            <span class="product-card__circle" aria-hidden="true"></span>
+            <img src="assets/images/products/chocolate-front.png"
+                 alt="Bolo no pote de Chocolate com cobertura de ganache"
+                 width="400" height="480"
+                 loading="lazy"
+                 class="product-card__img">
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name" id="product-ch">Chocolate</h3>
+            <p class="product-card__desc">
+              Bolo duplo de chocolate com ganache sedosa.
+              Pura indulgência em cada colherada.
+            </p>
+            <a href="https://wa.me/554197467645?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20Chocolate%20%F0%9F%98%8A"
+               class="product-card__link" target="_blank" rel="noopener noreferrer">Peça Agora &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SPOTLIGHT ========== -->
+  <section class="spotlight" aria-labelledby="spotlight-heading">
+    <div class="spotlight__inner container">
+      <div class="spotlight__image">
+        <img src="assets/images/products/red-velvet-3-4.png"
+             alt="Bolo no pote Red Velvet fotografado em ângulo mostrando todas as camadas"
+             width="600" height="800"
+             loading="lazy"
+             class="spotlight__img">
+        <span class="decor-circle decor-circle--spotlight-1" aria-hidden="true"></span>
+        <span class="decor-circle decor-circle--spotlight-2" aria-hidden="true"></span>
+      </div>
+      <div class="spotlight__content">
+        <p class="spotlight__eyebrow">Favorito do Público</p>
+        <h2 class="spotlight__heading" id="spotlight-heading">
+          Red Velvet<br><em>Perfeição</em>
+        </h2>
+        <p class="spotlight__text">
+          Nosso Red Velvet é feito com muito amor — bolo úmido e vibrante
+          intercalado com cream cheese caseiro. Cada potinho é montado
+          à mão, garantindo a proporção perfeita de bolo e creme
+          em cada colherada.
+        </p>
+        <ul class="spotlight__features" role="list">
+          <li>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="10" cy="10" r="10" fill="#ED598F" opacity="0.15"/>
+              <path d="M6 10l3 3 5-5" stroke="#ED598F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Cream cheese caseiro
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="10" cy="10" r="10" fill="#ED598F" opacity="0.15"/>
+              <path d="M6 10l3 3 5-5" stroke="#ED598F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Cacau premium &amp; base de buttermilk
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="10" cy="10" r="10" fill="#ED598F" opacity="0.15"/>
+              <path d="M6 10l3 3 5-5" stroke="#ED598F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Feito fresquinho sob encomenda
+          </li>
+        </ul>
+        <a href="https://wa.me/554197467645?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20Red%20Velvet%20%F0%9F%98%8A"
+           class="btn btn--primary btn--lg"
+           target="_blank"
+           rel="noopener noreferrer">Pedir Red Velvet</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIAL ========== -->
+  <section class="testimonial" aria-labelledby="testimonial-heading">
+    <div class="testimonial__inner container">
+      <h2 class="sr-only" id="testimonial-heading">Depoimento de Cliente</h2>
+
+      <!-- <img src="assets/images/logos/logo-dog.png"
+           alt=""
+           aria-hidden="true"
+           class="testimonial__decor-dog"
+           width="120" height="140"> -->
+
+      <figure class="testimonial__quote">
+        <blockquote>
+          <p class="testimonial__text">
+            &ldquo;Sem dúvida o melhor bolo no pote que já comi.
+            As camadas do Red Velvet são perfeitamente equilibradas
+            e dá pra sentir o carinho em cada colherada.
+            Com certeza vou pedir de novo!&rdquo;
+          </p>
+        </blockquote>
+        <figcaption class="testimonial__author">
+          <span class="testimonial__stars" aria-label="5 de 5 estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="testimonial__name">Nicolas M.</span>
+          <span class="testimonial__role">Cliente Fiel</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq" id="faq" aria-labelledby="faq-heading">
+    <div class="faq__inner container">
+      <div class="faq__header">
+        <p class="faq__eyebrow">Tem Dúvidas?</p>
+        <h2 class="faq__heading" id="faq-heading">
+          Perguntas<br><em>Frequentes</em>
+        </h2>
+      </div>
+
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary class="faq__question">
+            <span>O que é "bolo no pote"?</span>
+            <span class="faq__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <line x1="10" y1="4" x2="10" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="faq__icon-v"/>
+                <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq__answer">
+            <p>Bolo no pote é uma tradição brasileira de sobremesa onde camadas
+            de bolo e recheio são montadas em um potinho transparente, criando
+            uma sobremesa linda, prática e cheia de sabor.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            <span>Como faço para pedir?</span>
+            <span class="faq__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <line x1="10" y1="4" x2="10" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="faq__icon-v"/>
+                <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq__answer">
+            <p>Você pode pedir pelo nosso Instagram (DM) ou pelo WhatsApp.
+            Toque no botão "Peça Agora" em qualquer lugar da página para começar!</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            <span>Quanto tempo as sobremesas duram?</span>
+            <span class="faq__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <line x1="10" y1="4" x2="10" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="faq__icon-v"/>
+                <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq__answer">
+            <p>Nossos potinhos ficam melhor se consumidos em até 3 dias na geladeira.
+            Recomendamos comer bem geladinho para a melhor experiência!</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            <span>Vocês fazem entrega?</span>
+            <span class="faq__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <line x1="10" y1="4" x2="10" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="faq__icon-v"/>
+                <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq__answer">
+            <p>Sim! Fazemos entrega na nossa região. Os detalhes de entrega e
+            pedido mínimo são informados na hora do pedido.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            <span>Posso encomendar para eventos ou em grande quantidade?</span>
+            <span class="faq__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <line x1="10" y1="4" x2="10" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="faq__icon-v"/>
+                <line x1="4" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </summary>
+          <div class="faq__answer">
+            <p>Com certeza! Adoramos atender eventos. Entre em contato para
+            preços especiais e sabores personalizados. Perfeito para festas,
+            casamentos e eventos corporativos.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="order" role="contentinfo">
+    <!-- CTA Band -->
+    <div class="footer__cta-band">
+      <div class="footer__cta-inner container">
+        <img src="assets/images/logos/logo-dog.png"
+             alt=""
+             aria-hidden="true"
+             class="footer__cta-dog"
+             width="80" height="96">
+        <h2 class="footer__cta-heading">
+          Pronto pra Provar<br><em>Algo Doce?</em>
+        </h2>
+        <p class="footer__cta-text">
+          Peça seus sabores favoritos hoje e sinta a diferença
+          do feito à mão com carinho.
+        </p>
+        <a href="https://wa.me/554197467645?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20%F0%9F%98%8A"
+           class="btn btn--primary btn--lg"
+           target="_blank"
+           rel="noopener noreferrer">
+          Pedir pelo WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer__bottom">
+      <div class="footer__bottom-inner container">
+        <img src="assets/images/logos/logo-bw-dark.png"
+             alt="Malili's Sweet Bakery"
+             class="footer__logo"
+             width="180" height="54"
+             loading="lazy">
+
+        <ul class="footer__social" aria-label="Redes sociais">
+          <li>
+            <a href="https://www.instagram.com/malilisconfeitaria/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/554197467645?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20%F0%9F%98%8A" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer__copy">&copy; 2026 Malili's Sweet Bakery. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
