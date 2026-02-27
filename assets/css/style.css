@@ -1468,6 +1468,12 @@ button:focus-visible {
   .hero__subtext {
     text-align: center;
   }
+
+  .product-card__circle {
+    width: 50%;
+    left: 30%;
+    top: 50%;
+  }
 }
 
 /* Tablet: 768px - 1023px */
