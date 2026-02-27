@@ -1474,6 +1474,10 @@ button:focus-visible {
     left: 30%;
     top: 50%;
   }
+
+  .hero__decor .decor-circle--hero-sm {
+    display: none;
+  }
 }
 
 /* Tablet: 768px - 1023px */
