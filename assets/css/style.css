@@ -327,7 +327,7 @@ button:focus-visible {
 }
 
 .navbar__logo img {
-  height: 60px;
+  height: 48px;
   width: auto;
 }
 
@@ -1220,6 +1220,14 @@ button:focus-visible {
   margin-top: var(--space-md);
 }
 
+.mobile-header-logo {
+  display: none;
+}
+
+.desktop-header-logo {
+  display: block;
+}
+
 /* ==========================================================================
    RESPONSIVE
    ========================================================================== */
@@ -1478,6 +1486,14 @@ button:focus-visible {
   .hero__decor .decor-circle--hero-sm {
     display: none;
   }
+
+  .mobile-header-logo {
+    display: block;
+  }
+
+  .desktop-header-logo {
+    display: none;
+  }
 }
 
 /* Tablet: 768px - 1023px */
@@ -1500,6 +1516,44 @@ button:focus-visible {
     grid-column: 1 / -1;
     max-width: 380px;
     margin-inline: auto;
+  }
+}
+
+/* Special Mobile: 360px - 600px */
+@media (min-width: 360px) and (max-width: 600px) {
+  .hero__heading {
+    text-align: left;
+  }
+
+  .second--hero-line {
+    margin-left: 50px;
+  }
+
+  .third--hero-line {
+    margin-left: 120px;
+  }
+
+  .hero__chef {
+    justify-content: end !important;
+  }
+
+  .hero__subtext {
+    text-align: right;
+  }
+}
+
+/* Fix for hero image on small desktop screens */
+@media (min-width: 1100px) and (max-width: 1280px) {
+  .hero__image {
+    width: 35% !important;
+    right: 0;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+  .hero__image {
+    width: 40% !important;
+    right: 0;
   }
 }
 
