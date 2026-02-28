@@ -701,7 +701,18 @@ button:focus-visible {
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
 }
 
-/* Floating balloons — base */
+/* Floating balloons — base; entrance on load via CSS so they always show */
+@keyframes balloonIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .about__balloon {
   position: absolute;
   z-index: calc(var(--z-content) + 2);
@@ -722,6 +733,13 @@ button:focus-visible {
   transition:
     transform 0.3s var(--ease-playful),
     box-shadow 0.3s var(--ease-playful);
+  animation: balloonIn 0.5s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about__balloon {
+    animation: none;
+  }
 }
 
 .about__balloon:hover {
@@ -742,25 +760,29 @@ button:focus-visible {
   color: var(--color-dark);
 }
 
-/* Balloon positions — 4 balloons arranged around the circle */
+/* Balloon positions — 4 balloons arranged around the circle; stagger entrance */
 .about__balloon--rv {
   top: 10%;
   left: 0%;
+  animation-delay: 0.1s;
 }
 
 .about__balloon--sc {
   top: 10%;
   right: 0%;
+  animation-delay: 0.2s;
 }
 
 .about__balloon--ch {
   top: 32%;
   right: -14%;
+  animation-delay: 0.3s;
 }
 
 .about__balloon--handmade {
   top: 30%;
   left: -12%;
+  animation-delay: 0.4s;
 }
 
 /* Text content — overlaps the faded bottom of the photo */
@@ -1489,6 +1511,7 @@ button:focus-visible {
 
   .mobile-header-logo {
     display: block;
+    height: 36px !important;
   }
 
   .desktop-header-logo {

@@ -30,6 +30,12 @@
       initProductCards();
       initFloatingDecor();
       initParallax();
+      // iOS: refresh ScrollTrigger after viewport settles (address bar, orientation)
+      setTimeout(() => ScrollTrigger.refresh(), 300);
+      window.addEventListener("resize", () => ScrollTrigger.refresh());
+      window.addEventListener("orientationchange", () => {
+        setTimeout(() => ScrollTrigger.refresh(), 200);
+      });
     }
   });
 
@@ -563,19 +569,6 @@
       scrollTrigger: {
         trigger: ".about__showcase",
         start: "top 75%",
-      },
-    });
-
-    // About — Balloons stagger in from outside
-    gsap.from(".about__balloon", {
-      scale: 0,
-      opacity: 0,
-      duration: 0.6,
-      stagger: 0.1,
-      ease: "back.out(1.7)",
-      scrollTrigger: {
-        trigger: ".about__showcase",
-        start: "top 70%",
       },
     });
 
