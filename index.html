@@ -223,6 +223,7 @@
           </div>
           <div class="product-card__info">
             <h3 class="product-card__name" id="product-rv">Red Velvet</h3>
+            <p class="product-card__price" aria-label="Preco R$22">R$22</p>
             <p class="product-card__desc">
               Bolo red velvet aveludado com deliciosas camadas de cream cheese.
               Nosso mais vendido.
@@ -244,6 +245,7 @@
           </div>
           <div class="product-card__info">
             <h3 class="product-card__name" id="product-sc">Caramelo Salgado</h3>
+            <p class="product-card__price" aria-label="Preco R$22">R$22</p>
             <p class="product-card__desc">
               Camadas ricas de caramelo coroadas com cristais crocantes de sal.
               Doce e salgado na medida.
@@ -265,6 +267,7 @@
           </div>
           <div class="product-card__info">
             <h3 class="product-card__name" id="product-ch">Chocolate</h3>
+            <p class="product-card__price" aria-label="Preco R$22">R$22</p>
             <p class="product-card__desc">
               Bolo duplo de chocolate com ganache sedosa.
               Pura indulgência em cada colherada.
@@ -329,6 +332,102 @@
            rel="noopener noreferrer">Pedir Red Velvet</a>
       </div>
     </div>
+  </section>
+
+  <!-- ========== INSTAGRAM FEED ========== -->
+  <section class="instagram" id="instagram" aria-labelledby="instagram-heading">
+    <div class="instagram__decor" aria-hidden="true">
+      <span class="decor-circle instagram__decor-circle instagram__decor-circle--lg"></span>
+      <span class="decor-circle instagram__decor-circle instagram__decor-circle--sm"></span>
+    </div>
+
+    <div class="instagram__inner container">
+      <div class="instagram__content">
+        <p class="instagram__eyebrow">Instagram</p>
+        <h2 class="instagram__heading" id="instagram-heading">
+          Nos Bastidores<br><em>Todos os Dias</em>
+        </h2>
+        <p class="instagram__text">
+          Acompanhe os novos sabores, produção artesanal e cada detalhe das nossas
+          Sweet Frames em tempo real.
+        </p>
+
+        <!-- <ul class="instagram__highlights" role="list">
+          <li>Novidades e reposicoes</li>
+          <li>Produção artesanal do dia</li>
+          <li>Conteudo fresco direto da cozinha</li>
+        </ul> -->
+
+        <a href="https://www.instagram.com/malilisconfeitaria/"
+           class="btn btn--primary"
+           target="_blank"
+           rel="noopener noreferrer">Seguir no Instagram</a>
+      </div>
+
+      <div class="instagram__feed" role="region" aria-label="Feed do Instagram">
+        <div class="instagram__embed-shell">
+          <blockquote class="instagram-media"
+                      data-instgrm-permalink="https://www.instagram.com/p/DSfzHjVAQZj/"
+                      data-instgrm-version="14"
+                      style="background:#ffffff; border:0; border-radius:16px; margin:0 auto; max-width:540px; min-width:326px; width:100%;"></blockquote>
+          <p class="instagram__embed-fallback">
+            O embed do Instagram precisa de um link de post ou reel.
+            <a href="https://www.instagram.com/malilisconfeitaria/" target="_blank" rel="noopener noreferrer">Abrir perfil no Instagram</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        var section = document.querySelector(".instagram");
+        if (!section) return;
+
+        var shell = section.querySelector(".instagram__embed-shell");
+        if (!shell) return;
+
+        var embedNode = shell.querySelector(".instagram-media");
+        if (!embedNode) return;
+
+        var postLinks = [
+          "https://www.instagram.com/p/DSfzHjVAQZj/",
+          "https://www.instagram.com/p/DUf6GvRDpRq/",
+          "https://www.instagram.com/p/DUdYcoVjuBM/",
+          "https://www.instagram.com/reel/DR26zyoAZTS/",
+          "https://www.instagram.com/p/DRc2l1BgbnJ/"
+        ];
+
+        var randomLink = postLinks[Math.floor(Math.random() * postLinks.length)];
+        embedNode.setAttribute("data-instgrm-permalink", randomLink);
+
+        function verifyEmbedLoaded() {
+          window.setTimeout(function () {
+            var loadedIframe = shell.querySelector("iframe");
+            if (!loadedIframe) {
+              section.classList.add("instagram--fallback");
+            }
+          }, 3000);
+        }
+
+        function processEmbed() {
+          if (window.instgrm && window.instgrm.Embeds && typeof window.instgrm.Embeds.process === "function") {
+            window.instgrm.Embeds.process();
+          }
+          verifyEmbedLoaded();
+        }
+
+        if (window.instgrm && window.instgrm.Embeds) {
+          processEmbed();
+          return;
+        }
+
+        var script = document.createElement("script");
+        script.src = "https://www.instagram.com/embed.js";
+        script.async = true;
+        script.onload = processEmbed;
+        document.body.appendChild(script);
+      })();
+    </script>
   </section>
 
   <!-- ========== TESTIMONIAL ========== -->
