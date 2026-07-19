@@ -882,8 +882,10 @@ button:focus-visible {
 
 .products__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--grid-gap);
+  max-width: 900px;
+  margin-inline: auto;
 }
 
 /* Product Card */
@@ -1793,15 +1795,6 @@ button:focus-visible {
     left: calc(var(--text-hero) * 3.2);
   }
 
-  .products__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .products__grid .product-card:last-child {
-    grid-column: 1 / -1;
-    max-width: 380px;
-    margin-inline: auto;
-  }
 }
 
 /* Special Mobile: 360px - 600px */
