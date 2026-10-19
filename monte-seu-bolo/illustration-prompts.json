@@ -1,0 +1,126 @@
+{
+  "generator": "Built-in image_gen",
+  "purpose": "Ingredient illustrations for step 3; not photographs of finished Malilis products",
+  "assets": [
+    {
+      "id": "brigadeiro-morango",
+      "file": "assets/recheios/brigadeiro-morango.webp",
+      "prompt": "Use case: product-mockup. Asset: one small bakery filling illustration for a mobile cake configurator. Create ONE appetizing isolated ingredient-and-filling vignette: a smooth generous swirl of dark milk-chocolate Brazilian brigadeiro cream with two fresh strawberries, one halved showing the inside. This represents 'Brigadeiro & Morango'. Style: refined realistic food illustration, softly hand-painted but highly tactile, warm natural colours, consistent three-quarter view, soft diffused upper-left light, very subtle grounding shadow. Cream should look like cake filling, not ice cream. Compact centered low composition fills 75 percent of a square canvas, fully in frame with generous transparent margins. True transparent background. No bowl, spoon, plate, label, lettering, packaging, logo, cake, cake slice, sprinkles, extra ingredients or decorative flourishes. Must read clearly as chocolate cream plus strawberry at 100px display size."
+    },
+    {
+      "id": "tropical",
+      "file": "assets/recheios/tropical.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Ivory coconut cake-filling cream, with two juicy small golden pineapple wedges and a fresh coconut wedge, a little fine coconut on the cream. No strawberries or chocolate."
+    },
+    {
+      "id": "nido",
+      "file": "assets/recheios/nido.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Pale ivory Brazilian milk-powder brigadeiro cream, one smooth mound with a delicate dusting and tiny heap of milk powder. Nothing else, no fruit or chocolate."
+    },
+    {
+      "id": "beijinho",
+      "file": "assets/recheios/beijinho.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Ivory Brazilian coconut beijinho filling, visibly flecked with fine shredded coconut, with one small fresh coconut wedge showing brown shell and white flesh. No fruit or chocolate."
+    },
+    {
+      "id": "floresta-negra",
+      "file": "assets/recheios/floresta-negra.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Small white whipped-cream mound with dark chocolate curls and two ripe dark red cherries, one halved. Chocolate curls clearly visible. No strawberries."
+    },
+    {
+      "id": "dolce-cinnamon",
+      "file": "assets/recheios/dolce-cinnamon.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Smooth golden dulce de leche filling swirl, two cinnamon sticks and a tiny dusting of cinnamon. No chocolate, fruit, nuts or cookies."
+    },
+    {
+      "id": "puro-brigadeiro",
+      "file": "assets/recheios/puro-brigadeiro.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Rich dark milk-chocolate Brazilian brigadeiro cake-filling swirl, and two small pieces of plain dark chocolate. No strawberries, fruit, sprinkles or nuts."
+    },
+    {
+      "id": "prestigio",
+      "file": "assets/recheios/prestigio.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Two adjacent generous swirls, dark chocolate brigadeiro cream and ivory coconut cream, with one small coconut wedge and a little shredded coconut. No fruit or nuts."
+    },
+    {
+      "id": "kikiriki",
+      "file": "assets/recheios/kikiriki.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Tan peanut pacoca brigadeiro cake-filling swirl with two crumbly golden pacoca cubes and a few shelled peanuts. No fruit or chocolate."
+    },
+    {
+      "id": "entre-dois-amores",
+      "file": "assets/recheios/entre-dois-amores.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Two distinct generous adjacent brigadeiro cream swirls: one milk-chocolate brown and one ivory white brigadeiro, nestled together, with small plain milk and white chocolate shards. No fruit or nuts."
+    },
+    {
+      "id": "jardim-silvestre",
+      "file": "assets/recheios/jardim-silvestre.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Ivory lemon-white-chocolate ganache swirl with a visible deep-purple blueberry jam ribbon, a small yellow lemon wedge and three blueberries. No strawberry or coconut."
+    },
+    {
+      "id": "red-velvet",
+      "file": "assets/recheios/red-velvet.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Fluffy white cream-cheese mousse with fresh raspberries, one blackberry and a tiny spoonless cream-cheese wedge at its base. No cake, red sponge, chocolate, strawberries or unrelated fruit."
+    },
+    {
+      "id": "maracuja-noir",
+      "file": "assets/recheios/maracuja-noir.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Two nestled swirls: golden passionfruit cream with visible black passionfruit seeds and deep dark chocolate ganache, with half a small passionfruit. No unrelated fruit."
+    },
+    {
+      "id": "cookies-cream",
+      "file": "assets/recheios/cookies-cream.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Ivory white-chocolate ganache with coarse dark chocolate cookie crumbs throughout, plus two small broken dark sandwich cookies showing a white cream centre. No packaging, fruit or nuts."
+    },
+    {
+      "id": "matilda",
+      "file": "assets/recheios/matilda.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Deep dark-chocolate ganache swirl with a small hazelnut-cream ribbon, two plain dark chocolate pieces and two shelled hazelnuts. Rich darker chocolate than the reference, no fruit."
+    },
+    {
+      "id": "rubi",
+      "file": "assets/recheios/rubi.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Milk-chocolate brigadeiro cream swirl with a vivid ruby-red mixed-berry jam ribbon, one raspberry and a blackberry. No strawberries or cake."
+    },
+    {
+      "id": "vellutato-fruits",
+      "file": "assets/recheios/vellutato-fruits.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Airy pastel blush-pink seasonal-fruit mousse with ivory white-chocolate curls and a delicate pink fruit-puree ribbon. No identifiable fresh fruit, berries or nuts, no ice-cream scoop, just mousse."
+    },
+    {
+      "id": "marta-rocha",
+      "file": "assets/recheios/marta-rocha.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Two softly folded pale ivory pastry creams with golden crunchy crumb scattered on them and two dark-purple dried prune halves. A refined layered filling vignette with visible textures. No cake, fresh grapes, chocolate, strawberries or nuts."
+    },
+    {
+      "id": "pistache-framboesa",
+      "file": "assets/recheios/pistache-framboesa.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Soft natural pale-green pistachio ganache swirl with a raspberry-red jam ribbon, two fresh raspberries and a few pistachio kernels. No chocolate-brown cream or other fruit."
+    },
+    {
+      "id": "caramelo-salgado",
+      "file": "assets/recheios/caramelo-salgado.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Glossy golden buttery salted-caramel cream mound with a folded caramel ribbon, a few visible delicate flaky sea-salt crystals, and two small soft caramel cubes. No chocolate, nuts or fruit."
+    },
+    {
+      "id": "piemonte",
+      "file": "assets/recheios/piemonte.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Chocolate-hazelnut filling cream swirl with a few golden crunchy crumbs, two shelled hazelnuts and a small piece of plain chocolate. No branded candy, wrapping, whole truffles, fruit or berries."
+    },
+    {
+      "id": "sol-de-verao",
+      "file": "assets/recheios/sol-de-verao.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Ivory citrus-white-chocolate ganache swirl with a small fresh orange wedge, a curl of orange zest and a small white-chocolate shard. No lemon or berries."
+    },
+    {
+      "id": "praline-noir",
+      "file": "assets/recheios/praline-noir.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Golden dulce de leche and dark-chocolate cream folded together with delicate crunchy golden caramelized praline shards. No identifiable nuts, fresh fruit, berries or cookies."
+    },
+    {
+      "id": "hazel-brownie",
+      "file": "assets/recheios/hazel-brownie.webp",
+      "prompt": "Use case: product-mockup. Asset: ONE bakery filling illustration for a mobile cake configurator. The supplied reference is STYLE REFERENCE ONLY: match its realistic hand-painted food cutout, three-quarter view, tactile cream texture, soft upper-left light and subtle shadow. Create the NEW SUBJECT below, not the reference subject. A compact, appetizing swirl or small mound of cake filling with only its signature ingredients, centered with comfortable transparent margins, whole vignette fully in frame, readable at 100px. True transparent background. No lettering, text, brands, package, plate, bowl, spoon, cake, cake slice, ice cream cone, decorative flowers or unrelated ingredients. Composition occupies about 75 percent of the square. Subject: Chocolate-hazelnut cream and dark ganache with two tiny moist dark-brown brownie cubes, a few brownie crumbs, and two shelled hazelnuts. No branded packaging, fruit or berries."
+    }
+  ]
+}

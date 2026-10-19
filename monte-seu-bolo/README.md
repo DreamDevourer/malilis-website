@@ -27,6 +27,10 @@ O objeto `catalogue`, no início de `assets/quiz.js`, concentra as categorias, o
 - O resumo abre uma mensagem para `5541997467645`; o envio é feito pela pessoa no WhatsApp.
 - As escolhas permanecem apenas no `sessionStorage` da aba, quando disponível. Não há backend ou envio automático. Recomeçar apaga o rascunho após confirmação.
 
+## Ilustrações dos recheios
+
+As 24 ilustrações do passo 3 foram geradas com a ferramenta integrada `image_gen` e salvas como WebP com transparência em `assets/recheios/`. Representam os recheios e ingredientes descritos no catálogo, sem definir a aparência do bolo pronto. Os prompts completos estão em `illustration-prompts.json`. As imagens têm carregamento sob demanda.
+
 ## Validação da prévia
 
 A implementação foi verificada com Playwright/Chromium nos tamanhos 360, 390, 768, 1280 e 1440 px. Foram testados todos os preços e opções por categoria, mudanças de categoria, campos obrigatórios, edição, recuperação da sessão, armazenamento indisponível, resumo e codificação da mensagem, cópia e alternativa manual, reinício, navegação por teclado e limite de data na virada do dia em Curitiba. A mensagem não foi enviada.

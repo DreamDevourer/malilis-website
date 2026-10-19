@@ -162,24 +162,28 @@
       {
         id: "baunilha",
         name: "Pão de Ló Baunilha",
+        image: "assets/massa-baunilha.webp",
         description:
           "Leve, macio e delicado. É a base perfeita para os mais diversos recheios.",
       },
       {
         id: "chocolate",
         name: "Pão de Ló Chocolate",
+        image: "assets/massa-chocolate.webp",
         description:
           "Intenso e irresistível, feito com Cacau Black. Traz um sabor marcante e uma textura incrível.",
       },
       {
         id: "red-velvet",
         name: "Red Velvet",
+        image: "assets/massa-red-velvet.webp",
         description:
           "Com sua cor vibrante e sabor levemente amanteigado, o Red Velvet é uma experiência única em cada fatia.",
       },
       {
         id: "chiffon",
         name: "Chiffon",
+        image: "assets/massa-chiffon.webp",
         description:
           "Ultra leve e fofinha, com textura aerada e um sabor suave, realçando ainda mais os recheios. O sabor da massa será combinado pelo WhatsApp.",
       },
@@ -349,6 +353,13 @@
       filling: "filling",
       size: "size",
     }[group];
+    if (group === "filling") {
+      return `<label class="cake-option cake-option--filling"><input type="radio" name="filling" value="${esc(id)}" ${state.filling === id ? "checked" : ""} required><span class="cake-filling-visual"><img src="assets/recheios/${esc(id)}.webp" width="400" height="360" alt="" loading="lazy" decoding="async"></span><span class="cake-option__body"><span class="cake-option__name">${esc(name)}</span><span class="cake-option__description">${esc(description)}</span></span></label>`;
+    }
+    if (group === "sponge") {
+      const image = catalogue.sponges.find((item) => item.id === id).image;
+      return `<label class="cake-option cake-option--sponge" data-sponge="${esc(id)}"><input type="radio" name="sponge" value="${esc(id)}" ${state.sponge === id ? "checked" : ""} required><span class="cake-sponge-visual"><img src="${esc(image)}" width="300" height="250" alt="" decoding="async"></span><span class="cake-option__body"><span class="cake-option__name">${esc(name)}</span><span class="cake-option__description">${esc(description)}</span></span></label>`;
+    }
     return `<label class="cake-option"><input type="radio" name="${group}" value="${esc(id)}" ${state[key] === id ? "checked" : ""} required><span class="cake-option__body"><span class="cake-option__name">${esc(name)}</span><span class="cake-option__description">${esc(description)}</span>${extra}</span>${group === "category" ? `<span class="cake-option__number" aria-hidden="true">0${catalogue.categories.findIndex((item) => item.id === id) + 1}</span>` : ""}</label>`;
   }
   function field(key, label, placeholder, options = {}) {
@@ -424,8 +435,7 @@
           "A base de tudo?<br>Uma boa <em>massa.</em>",
           `Para a categoria ${current.name}, ${current.id === "premium" ? "a massa é Chiffon. Selecione para continuar; o sabor será combinado com a gente." : "escolha a textura e o sabor que vão receber seu recheio."}`,
         ) +
-        '<div class="cake-mass-image"><img src="assets/massas.webp" width="1000" height="469" alt="Massas de baunilha, chocolate, Red Velvet e Chiffon do catálogo Malili’s"></div>' +
-        `<fieldset class="cake-choice-group"><legend class="sr-only">Escolha a massa</legend><div class="cake-choices">${catalogue.sponges
+        `<fieldset class="cake-choice-group"><legend class="sr-only">Escolha a massa</legend><div class="cake-choices cake-choices--sponges">${catalogue.sponges
           .filter((item) => current.sponges.includes(item.id))
           .map((item) => option("sponge", item.id, item.name, item.description))
           .join("")}</div></fieldset>`;
@@ -435,6 +445,7 @@
           "O melhor fica<br><em>entre as camadas.</em>",
           `Conheça os recheios ${current.name}. Escolha uma composição do catálogo para o seu bolo.`,
         ) +
+        '<p class="cake-illustration-note">Ilustrações dos recheios e seus ingredientes.</p>' +
         `<fieldset class="cake-choice-group"><legend class="sr-only">Escolha um recheio</legend><div class="cake-choices cake-choices--fillings">${current.fillings.map(([id, name, description]) => option("filling", id, name, description)).join("")}</div></fieldset><p class="cake-notice">Quer outra combinação? Conte nas observações ao final. A gente confirma as possibilidades pelo WhatsApp.</p>`;
     } else if (state.step === 3) {
       html =

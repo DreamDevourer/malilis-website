@@ -400,6 +400,53 @@
 .cake-choices--fillings .cake-option__name {
   font-size: 19px;
 }
+/* Ingredient illustrations stay compact so fillings remain easy to compare. */
+.cake-illustration-note {
+  margin: -12px 0 20px;
+  font-size: 11px;
+  color: var(--cake-muted);
+}
+.cake-choices--fillings .cake-option--filling {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+}
+.cake-option--filling input {
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  margin: 0;
+}
+.cake-option--filling .cake-option__body {
+  padding-right: 15px;
+}
+.cake-filling-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 96px;
+  border-radius: 50%;
+  background: #f8eee6;
+}
+.cake-filling-visual img {
+  width: 100%;
+  height: 94px;
+  object-fit: contain;
+}
+@media (min-width: 601px) and (max-width: 1199px) {
+  .cake-choices--fillings .cake-option--filling {
+    grid-template-columns: 76px minmax(0, 1fr);
+    gap: 10px;
+  }
+  .cake-filling-visual {
+    min-height: 84px;
+  }
+  .cake-filling-visual img {
+    height: 82px;
+  }
+}
 .cake-choices--sizes {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -415,17 +462,90 @@
   margin-top: 12px;
   font-weight: 600;
 }
-.cake-mass-image {
-  background: #f5ece3;
-  border-radius: 14px;
-  margin-bottom: 20px;
-  overflow: hidden;
-  padding: 20px;
+/* Each sponge has its own illustration inside the selectable card. */
+.cake-choices--sponges {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
 }
-.cake-mass-image img {
-  max-height: 110px;
+.cake-option--sponge {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 18px;
+  padding: 16px;
+}
+.cake-option--sponge input {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  margin: 0;
+  z-index: 1;
+}
+.cake-sponge-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8eddb;
+  border-radius: 10px;
+  padding: 12px 4px;
+  min-height: 145px;
+}
+[data-sponge="chocolate"] .cake-sponge-visual {
+  background: #f0e4dc;
+}
+[data-sponge="red-velvet"] .cake-sponge-visual {
+  background: #fbe7ed;
+}
+.cake-sponge-visual img {
   width: 100%;
+  height: 130px;
   object-fit: contain;
+  filter: drop-shadow(0 8px 7px #65332615);
+}
+.cake-option--sponge .cake-option__name {
+  font-size: 23px;
+}
+.cake-choices--sponges:has(> :only-child) {
+  grid-template-columns: 1fr;
+}
+.cake-choices--sponges:has(> :only-child) .cake-option--sponge {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  align-items: center;
+}
+.cake-choices--sponges:has(> :only-child) .cake-option__body {
+  padding-right: 24px;
+}
+@media (max-width: 600px) {
+  .cake-choices--sponges {
+    grid-template-columns: 1fr;
+  }
+  .cake-choices--sponges .cake-option--sponge {
+    display: grid;
+    grid-template-columns: 92px minmax(0, 1fr);
+    align-items: center;
+    gap: 14px;
+    padding: 16px;
+  }
+  .cake-sponge-visual {
+    min-height: 108px;
+    padding: 4px;
+  }
+  .cake-sponge-visual img {
+    height: 100px;
+  }
+  .cake-option--sponge .cake-option__body {
+    padding-right: 20px;
+  }
+  .cake-option--sponge .cake-option__name {
+    font-size: 22px;
+  }
+  .cake-option--sponge input {
+    top: 15px;
+    right: 12px;
+  }
+  .cake-choices--sponges:has(> :only-child) .cake-option--sponge {
+    grid-template-columns: 92px minmax(0, 1fr);
+  }
 }
 .cake-summary {
   background: #f6eee6;
@@ -1069,7 +1189,11 @@
     width: 100%;
     font-size: 9px;
   }
-  .cake-page:has(input:focus, textarea:focus) .cake-navigation {
+  .cake-page:has(
+      input:focus:not([type="radio"]):not([type="checkbox"]),
+      textarea:focus
+    )
+    .cake-navigation {
     position: static;
   }
 }
