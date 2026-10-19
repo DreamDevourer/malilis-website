@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff9f5" />
+    <meta
+      name="description"
+      content="Monte seu bolo Malili’s: escolha a massa, o recheio, o tamanho e a decoração. Prepare seu pedido de orçamento para conversar com a gente pelo WhatsApp."
+    />
+    <title>Monte seu bolo | Malili’s Sweet Bakery</title>
+    <link rel="icon" href="../assets/images/logos/logo-dog.png" />
+    <link rel="stylesheet" href="../assets/css/style.css?v=62811148ff71" />
+    <link rel="stylesheet" href="assets/quiz.css?v=62607d155e5b" />
+    <script src="assets/quiz.js" defer></script>
+  </head>
+  <body class="cake-page">
+    <a class="cake-skip" href="#quiz">Ir para as escolhas</a>
+    <header class="cake-header">
+      <a href="../" aria-label="Malili’s Sweet Bakery, início"
+        ><img
+          src="../assets/images/logos/logo-horizontal-minimal.png"
+          width="156"
+          height="44"
+          alt="Malili’s Sweet Bakery"
+      /></a>
+      <a class="cake-home" href="../"
+        >Voltar ao site <span aria-hidden="true">↗</span></a
+      >
+    </header>
+    <main>
+      <section class="cake-hero" aria-labelledby="intro-title" hidden>
+        <div class="cake-hero__copy">
+          <p class="cake-eyebrow"><span></span> FEITO À MÃO. DO SEU JEITO.</p>
+          <h1 id="intro-title">
+            Sua ocasião.<br />Seu gosto.<br /><em>Seu bolo.</em>
+          </h1>
+          <p class="cake-intro">
+            Das primeiras camadas ao último detalhe,<br
+              class="cake-desktop-break"
+            />
+            vamos montar um bolo com a sua cara.
+          </p>
+          <a class="cake-button cake-button--dark" href="#quiz"
+            >Vamos escolher? <span aria-hidden="true">↗</span></a
+          >
+          <p class="cake-hero__note">
+            Você escolhe. A gente prepara o orçamento.
+          </p>
+        </div>
+        <div class="cake-hero__visual">
+          <span class="cake-orbit cake-orbit--one" aria-hidden="true"></span
+          ><span class="cake-orbit cake-orbit--two" aria-hidden="true"></span>
+          <span class="cake-photo-label">Uma celebração em cada camada</span>
+          <img
+            src="assets/bolo-red-velvet.webp"
+            width="760"
+            height="814"
+            alt="Bolo Malili’s com buttercream rosa, decoração de bicos e frutas vermelhas"
+            loading="lazy"
+          />
+          <div class="cake-stamp" aria-hidden="true">
+            feito com<br /><strong>carinho</strong><span>✳</span>
+          </div>
+        </div>
+        <div class="cake-hero__footer">
+          <span>BOLOS SOB ENCOMENDA</span
+          ><span>CURITIBA, PR <span aria-hidden="true">↙</span></span>
+        </div>
+      </section>
+      <div class="cake-facts" aria-label="Como funciona a encomenda" hidden>
+        <p>
+          <span aria-hidden="true">✳</span> Pelo menos 5 dias de antecedência
+        </p>
+        <p><span aria-hidden="true">⌂</span> Retirada na Malili’s</p>
+        <p><span aria-hidden="true">♡</span> Cada detalhe combinado com você</p>
+      </div>
+      <section id="quiz" class="cake-workspace" aria-label="Monte seu bolo">
+        <div class="cake-progress-top">
+          <p class="cake-eyebrow">SEU BOLO COMEÇA AQUI</p>
+          <button type="button" class="cake-text-button" id="restart">
+            Recomeçar <span aria-hidden="true">↺</span>
+          </button>
+        </div>
+        <div class="cake-progress" aria-label="Etapas">
+          <div class="cake-progress__track">
+            <span id="progress-bar"></span>
+          </div>
+          <p id="progress-label"></p>
+          <ol id="step-list"></ol>
+        </div>
+        <div class="cake-layout">
+          <div class="cake-form-area">
+            <form id="cake-form" novalidate>
+              <div id="step-content"></div>
+              <p class="cake-error" id="form-error" role="alert" hidden></p>
+              <div class="cake-navigation">
+                <button type="button" id="back" class="cake-back">
+                  ← Voltar</button
+                ><span class="cake-navigation__price" id="mobile-price"></span
+                ><button
+                  type="submit"
+                  id="next"
+                  class="cake-button cake-button--dark"
+                >
+                  Continuar <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </form>
+            <noscript
+              ><div class="cake-notice">
+                Ative o JavaScript para montar seu bolo. Você também pode
+                <a href="https://wa.me/5541997467645"
+                  >pedir um orçamento pelo WhatsApp</a
+                >. Encomendas com pelo menos 5 dias de antecedência, retirada na
+                Malili’s e sinal de 50% para confirmação.
+              </div></noscript
+            >
+          </div>
+          <aside class="cake-summary" aria-labelledby="summary-title">
+            <div class="cake-summary__heading">
+              <p class="cake-eyebrow">CAMADA POR CAMADA</p>
+              <span aria-hidden="true">✳</span>
+            </div>
+            <h2 id="summary-title">Seu bolo, até aqui.</h2>
+            <div id="summary-content"></div>
+            <div class="cake-summary__price">
+              <span>Valor base do bolo</span
+              ><strong id="summary-price" aria-live="polite" aria-atomic="true"
+                >A definir</strong
+              >
+              <p>
+                Personalizações e extras são orçados à parte. O valor final é
+                confirmado pelo WhatsApp.
+              </p>
+            </div>
+            <p class="cake-summary__foot">
+              Feito à mão, especialmente<br />para a sua ocasião.
+              <span aria-hidden="true">♡</span>
+            </p>
+          </aside>
+        </div>
+      </section>
+      <section class="cake-closing">
+        <img
+          src="../assets/images/logos/logo-dog.png"
+          width="50"
+          height="66"
+          alt=""
+        />
+        <p>As melhores memórias<br />também têm <em>sabor.</em></p>
+        <span>Malili’s Sweet Bakery · Curitiba</span>
+      </section>
+    </main>
+    <footer class="cake-footer">
+      <a href="../">Malili’s Sweet Bakery</a
+      ><span>Feito com carinho. Compartilhado com amor.</span
+      ><a
+        href="https://www.instagram.com/malilisconfeitaria/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Instagram ↗</a
+      >
+    </footer>
+    <dialog id="restart-dialog" class="cake-dialog">
+      <h2>Começar um novo bolo?</h2>
+      <p>As escolhas deste orçamento serão apagadas.</p>
+      <div>
+        <button type="button" id="cancel-restart" class="cake-back">
+          Manter escolhas</button
+        ><button
+          type="button"
+          id="confirm-restart"
+          class="cake-button cake-button--dark"
+        >
+          Recomeçar
+        </button>
+      </div>
+    </dialog>
+    <p id="cake-status" class="sr-only" role="status" aria-live="polite"></p>
+  </body>
+</html>
