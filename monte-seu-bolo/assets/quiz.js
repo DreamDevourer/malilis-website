@@ -2,6 +2,7 @@
   "use strict";
 
   // Source of truth: Malili’s Catálogo Bolos 2026, pages 3–12.
+  // Weights corrected by Marjory on 2026-10-20; supersede the PDF.
   const catalogue = {
     whatsapp: "5541997467645",
     timezone: "America/Sao_Paulo",
@@ -189,10 +190,10 @@
       },
     ],
     sizes: [
-      { id: "PP", diameter: "13 cm", height: "9,5 cm", weight: "650 g" },
-      { id: "P", diameter: "15 cm", height: "11 cm", weight: "1 kg" },
-      { id: "M", diameter: "22 cm", height: "12 cm", weight: "2,4 kg" },
-      { id: "G", diameter: "26 cm", height: "12 cm", weight: "3,3 kg" },
+      { id: "PP", diameter: "13 cm", height: "9,5 cm", weight: "1,3 kg" },
+      { id: "P", diameter: "15 cm", height: "11 cm", weight: "2 kg" },
+      { id: "M", diameter: "22 cm", height: "12 cm", weight: "4,7 kg" },
+      { id: "G", diameter: "26 cm", height: "12 cm", weight: "6,7 kg" },
     ],
   };
   const stepNames = [
