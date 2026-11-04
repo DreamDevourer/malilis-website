@@ -2,7 +2,7 @@
   "use strict";
 
   // Source of truth: Malili’s Catálogo Bolos 2026, pages 3–12.
-  // Weights corrected by Marjory on 2026-10-20; supersede the PDF.
+  // Prices and weights updated on 2026-11-04; supersede the PDF.
   const catalogue = {
     whatsapp: "5541997467645",
     timezone: "America/Sao_Paulo",
@@ -13,7 +13,7 @@
         name: "Clássicos",
         description:
           "Os clássicos da confeitaria brasileira, para não perder o que há de melhor em nossos doces.",
-        prices: { PP: 8150, P: 10800, M: 20500, G: 28000 },
+        prices: { PP: 6400, P: 8190, M: 13900, G: 18690 },
         sponges: ["baunilha", "chocolate", "red-velvet"],
         fillings: [
           [
@@ -73,7 +73,7 @@
         name: "Especiais",
         description:
           "Sabores marcantes e delicados, com recheios elaborados que exploram novas possibilidades a cada fatia.",
-        prices: { PP: 11490, P: 15730, M: 30500, G: 42500 },
+        prices: { PP: 10000, P: 14200, M: 26300, G: 36600 },
         sponges: ["baunilha", "chocolate", "red-velvet"],
         fillings: [
           [
@@ -123,7 +123,7 @@
         name: "Premium",
         description:
           "Ingredientes selecionados, preparações refinadas e combinações autorais que revelam a confeitaria em sua expressão mais sofisticada.",
-        prices: { PP: 17630, P: 24600, M: 46500, G: 67990 },
+        prices: { PP: 14690, P: 20000, M: 35990, G: 53000 },
         sponges: ["chiffon"],
         fillings: [
           [
@@ -190,10 +190,10 @@
       },
     ],
     sizes: [
-      { id: "PP", diameter: "13 cm", height: "9,5 cm", weight: "1,3 kg" },
-      { id: "P", diameter: "15 cm", height: "11 cm", weight: "2 kg" },
-      { id: "M", diameter: "22 cm", height: "12 cm", weight: "4,7 kg" },
-      { id: "G", diameter: "26 cm", height: "12 cm", weight: "6,7 kg" },
+      { id: "PP", diameter: "13 cm", height: "9,5 cm", weight: "700 g" },
+      { id: "P", diameter: "15 cm", height: "11 cm", weight: "1,2 kg" },
+      { id: "M", diameter: "22 cm", height: "12 cm", weight: "2,4 kg" },
+      { id: "G", diameter: "26 cm", height: "12 cm", weight: "3,3 kg" },
     ],
   };
   const stepNames = [

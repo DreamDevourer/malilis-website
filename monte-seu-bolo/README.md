@@ -16,7 +16,7 @@ Não precisa de instalação de dependências ou build. Os caminhos relativos ta
 
 ## Conteúdo e regras
 
-O objeto `catalogue`, no início de `assets/quiz.js`, concentra as categorias, os 24 recheios, as massas, as medidas, os 12 preços em centavos, o WhatsApp de destino e o prazo mínimo. A fonte é o catálogo de bolos 2026 em `Design Document/Bolo-quiz/`.
+O objeto `catalogue`, no início de `assets/quiz.js`, concentra as categorias, os 24 recheios, as massas, as medidas, os 12 preços em centavos, o WhatsApp de destino e o prazo mínimo. A fonte é o catálogo de bolos 2026 em `Design Document/Bolo-quiz/`, com preços e pesos atualizados em 04/11/2026 conforme os valores fornecidos pela cliente.
 
 - Uma composição de recheio por bolo, dentro da categoria escolhida.
 - Premium usa Chiffon; o sabor da massa é combinado pelo WhatsApp.
